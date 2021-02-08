@@ -75,7 +75,7 @@ html, body {
     height: 100vh;
     background-image: url(../images/macos.jpg);
     background-position: center top;
-	background-size:cover;
+	background-size: cover;
 }
 
 .navTrigger {
