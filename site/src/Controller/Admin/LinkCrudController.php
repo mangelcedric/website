@@ -4,6 +4,8 @@ namespace App\Controller\Admin;
 
 use App\Entity\Link;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
+use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 
 class LinkCrudController extends AbstractCrudController
 {
@@ -12,14 +14,14 @@ class LinkCrudController extends AbstractCrudController
         return Link::class;
     }
 
-    /*
+    
     public function configureFields(string $pageName): iterable
     {
         return [
-            IdField::new('id'),
-            TextField::new('title'),
-            TextEditorField::new('description'),
+            IdField::new('id')->onlyOnIndex(),
+            TextField::new('name'),
+            TextField::new('linkurl'),
         ];
     }
-    */
+  
 }

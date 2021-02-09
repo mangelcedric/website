@@ -32,6 +32,11 @@ class Link
      */
     private $updatedAt;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $linkurl;
+
     public function __construct()
     {
         $this->createdAt = new \DateTime();
@@ -74,6 +79,18 @@ class Link
     public function setUpdatedAt(?\DateTimeInterface $updatedAt): self
     {
         $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    public function getLinkurl(): ?string
+    {
+        return $this->linkurl;
+    }
+
+    public function setLinkurl(string $linkurl): self
+    {
+        $this->linkurl = $linkurl;
 
         return $this;
     }

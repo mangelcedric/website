@@ -22,7 +22,7 @@ class ProjectCrudController extends AbstractCrudController
         return [
             IdField::new('id')->onlyOnIndex(),
             TextField::new('name', 'Nom du projet'),
-            TextEditorField::new('description'),
+            TextField::new('description'),
             DateField::new('updatedAt', 'MAJ le ')->onlyWhenUpdating(),
         ];
     }
