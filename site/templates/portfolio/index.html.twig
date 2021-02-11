@@ -6,13 +6,13 @@
 
 <div style="height: 1000px">
     <h2 class="myH2">Mes réalisations</h2>
-
-    <ul class="myP">
+    <div class="card myP">
     {% for project in projects %}
-        
-        <li> {{ project.name }} : {{ project.description }}</li>
+        <div class="singleCard">
+            <h5> {{ project.name }} </h5>
+            <p>{{ project.description }}</p>
+        </div>
           
     {% endfor %}
-    </ul>
 </div>
 {% endblock %}

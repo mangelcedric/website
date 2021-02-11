@@ -350,3 +350,42 @@ html, body {
 		padding:2%;
 	}
 }
+
+.singleCard {
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
+    box-shadow: rgb(161, 160, 160) 1px 1px 15px;
+    border-radius: 1em;
+}
+.singleCard:hover {
+    box-shadow:  rgb(161, 160, 160) 1px 1px 30px;
+    transition: 0.5s;
+    /* background-color: #78cdfb; */
+    border: 1px solid rgb(117, 116, 116);
+}
+.container.card.myP{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.8em;
+}
+.singleSkillCard {
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
+    margin-right: 1.5em;
+    box-shadow: rgb(161, 160, 160) 1px 1px 15px;
+    border-radius: 1em;
+    width: 20%;
+}
+.singleSkillCard:hover {
+    box-shadow:  rgb(161, 160, 160) 1px 1px 30px;
+    transition: 0.5s;
+    /* background-color: #78cdfb; */
+    border: 1px solid rgb(117, 116, 116);
+}

@@ -5,13 +5,12 @@
 {% block body %}
 <div style="height: 1000px">
     <h2 class="myH2">Mes compétences</h2>
-    <ul class="myP">
+    <p class="myP">Issu de la Promotion Kraken de l'école O'Clock, j'ai pu appréhender les notions de programmation telles que</p>
+    <div class="container card myP">
     {% for skill in skills %}
-        
-    <p class="myP">Issu de la Promotion Kraken de l'école O'Clock, j'ai pu appréhender les notions de bases telles que {{skill.name}} mais aussi me spécialiser en {{skill.name}}</p>
-        <li>{{ skill.name }}</li>
-          
+        <div class="singleSkillCard">
+            <h5> {{ skill.name }} </h5>
+        </div>
     {% endfor %}
-    </ul>
 </div>
 {% endblock %}
