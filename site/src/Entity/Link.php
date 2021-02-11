@@ -37,6 +37,11 @@ class Link
      */
     private $linkurl;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $image;
+
     public function __construct()
     {
         $this->createdAt = new \DateTime();
@@ -91,6 +96,18 @@ class Link
     public function setLinkurl(string $linkurl): self
     {
         $this->linkurl = $linkurl;
+
+        return $this;
+    }
+
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    public function setImage(?string $image): self
+    {
+        $this->image = $image;
 
         return $this;
     }
