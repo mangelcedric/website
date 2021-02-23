@@ -1,0 +1,16 @@
+
+easy_admin:
+    entities:
+        Skill:
+            # ...
+            list:
+                fields:
+                    - { property: 'imageFile', type: 'image', base_path: '%app.path.uploads%' }
+            # ...
+            show:
+                fields:
+                    - { property: 'imageFile', type: 'image', base_path: '%app.path.uploads%' }
+
+            form:
+                fields:
+                    - { property: 'imageFile', type: 'file' }
