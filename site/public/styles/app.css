@@ -397,3 +397,15 @@ html, body {
     margin-left: auto;
     width: 70%;
 }
+
+.project_link{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black;
+}
+.project_link:hover{
+    text-decoration: underline;
+}
+.project_link:visited{
+    color:dimgrey;
+}

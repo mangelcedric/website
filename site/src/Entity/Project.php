@@ -42,6 +42,11 @@ class Project
      */
     private $image;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $projectLink;
+
     public function __construct()
     {
         $this->createdAt = new \DateTime();
@@ -108,6 +113,18 @@ class Project
     public function setImage(?string $image): self
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    public function getProjectLink(): ?string
+    {
+        return $this->projectLink;
+    }
+
+    public function setProjectLink(?string $projectLink): self
+    {
+        $this->projectLink = $projectLink;
 
         return $this;
     }

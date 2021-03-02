@@ -9,6 +9,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\UrlField;
 
 class ProjectCrudController extends AbstractCrudController
 {
@@ -24,6 +25,7 @@ class ProjectCrudController extends AbstractCrudController
             IdField::new('id')->onlyOnIndex(),
             TextField::new('name', 'Nom du projet'),
             TextField::new('description'),
+            UrlField::new('projectLink', 'Lien du projet'),
             ImageField::new('image')->setUploadDir('public/uploads'),
             DateField::new('updatedAt', 'MAJ le ')->onlyWhenUpdating(),
         ];
