@@ -364,7 +364,7 @@ html, body {
     box-shadow:  rgb(161, 160, 160) 1px 1px 30px;
     transition: 0.5s;
     /* background-color: #78cdfb; */
-    border: 1px solid rgb(117, 116, 116);
+    /* border: 1px solid rgb(117, 116, 116); */
 }
 .container.card.myP{
     display: flex;
