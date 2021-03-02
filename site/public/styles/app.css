@@ -89,7 +89,7 @@ html, body {
     transition: all 0.4s ease;
 }
 
-/* Media qurey section */
+/* Media query section */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
@@ -387,5 +387,13 @@ html, body {
     box-shadow:  rgb(161, 160, 160) 1px 1px 30px;
     transition: 0.5s;
     /* background-color: #78cdfb; */
-    border: 1px solid rgb(117, 116, 116);
+    /* border: 1px solid rgb(117, 116, 116); */
+}
+
+.skill_image{
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
 }
