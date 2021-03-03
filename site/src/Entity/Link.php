@@ -4,9 +4,12 @@ namespace App\Entity;
 
 use App\Repository\LinkRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass=LinkRepository::class)
+ * @Vich\Uploadable
  */
 class Link
 {
@@ -41,6 +44,13 @@ class Link
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $image;
+
+    /**
+     * @Vich\UploadableField(mapping="uploads", fileNameProperty="image")
+     * @var File
+     */
+    private $imageFile;
+
 
     public function __construct()
     {
@@ -110,5 +120,18 @@ class Link
         $this->image = $image;
 
         return $this;
+    }
+
+    public function getImageFile()
+    {
+        return $this->imageFile;
+    }
+
+    public function setImageFile(File $imageFile = null)
+    {
+        $this->imageFile = $imageFile;
+        if ($imageFile) {
+            $this->updatedAt = new \DateTime('now');
+        }
     }
 }

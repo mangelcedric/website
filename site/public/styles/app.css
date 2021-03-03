@@ -409,6 +409,7 @@ html, body {
 .project_link:visited{
     color:dimgrey;
 }
+
 .mail{
     font-size: 20px;
     font-family: "Quicksand", sans-serif;
@@ -451,10 +452,13 @@ html, body {
     box-shadow:  rgb(161, 160, 160) 1px 1px 10px;
     transition: 0.5s;
 }
-.logo_sn{
-    display: inline;
-    text-align: center;
-	padding-left:15%;
-	padding-right:15%;
-	font-size: 20px;
+
+.footer_link{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.link_image{
+    width: 60%;
+    margin-bottom: 2em;
 }

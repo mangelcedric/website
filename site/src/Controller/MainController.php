@@ -2,8 +2,9 @@
 
 namespace App\Controller;
 
-use App\Entity\User;
+use App\Entity\Link;
 use App\Form\ContactType;
+use App\Repository\LinkRepository;
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -28,7 +29,7 @@ class MainController extends AbstractController
     /**
      * @Route("/contact", name="contact", methods={"GET", "POST"})
      */
-    public function contact(Request $request, MailerInterface $mailer): Response
+    public function contact(Request $request, MailerInterface $mailer, LinkRepository $linkRepository): Response
     {
         $mail = $request->get('contact');
         $form = $this->createForm(ContactType::class);
@@ -52,6 +53,7 @@ class MainController extends AbstractController
 
         return $this->render('main/contact.html.twig', [
             'form' => $form->createView(),
+            'links' => $linkRepository->findAll()
         ]);
     }
 }
