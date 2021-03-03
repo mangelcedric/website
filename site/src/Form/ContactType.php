@@ -16,17 +16,20 @@ class ContactType extends AbstractType
     {
         $builder
             ->add('email', EmailType::class, [
-                'label' => 'Votre adresse email : ',
+                'label' => 'Votre adresse e-mail : ',
                 'required' => true,
                 'constraints' => new Assert\NotBlank(),
+                'attr' => ['class' => 'emailadress']
             ])
             ->add('text', TextareaType::class, [
                 'label' => false,
                 'required' => true,
                 'constraints' => new Assert\NotBlank(),
+                'attr' => ['class' => 'textarea']
             ])
             ->add('send', SubmitType::class, [
-                'label' => 'Envoyer'
+                'label' => 'Envoyer',
+                'attr' => ['class' => 'submit']
             ])
         ;
     }
