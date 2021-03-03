@@ -8,7 +8,6 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\DateField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
-use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\UrlField;
 use Vich\UploaderBundle\Form\Type\VichImageType;
@@ -26,15 +25,15 @@ class ProjectCrudController extends AbstractCrudController
         return [
             IdField::new('id')->onlyOnIndex(),
             TextField::new('name', 'Nom du projet'),
-            TextField::new('description'),
-            UrlField::new('projectLink', 'Lien du projet'),
             ImageField::new('image', 'Image')
             ->onlyOnIndex()
             ->setBasePath('uploads/'),
+            TextField::new('description'),
+            UrlField::new('projectLink', 'Lien du projet'),
             TextareaField::new('imageFile', 'Image')
                 ->setFormType(VichImageType::class)
                 ->onlyOnForms(),
-            DateField::new('updatedAt', 'MAJ le ')->onlyWhenUpdating(),
+            // DateField::new('updatedAt', 'MAJ le ')->onlyWhenUpdating(),
         ];
     }
     
