@@ -344,6 +344,7 @@ html, body {
 	padding-left:15%;
 	padding-right:15%;
 	font-size: 20px;
+    line-height: 1.5em;
 }
 @media all and (max-width:700px){
 	.myP {
@@ -351,6 +352,16 @@ html, body {
 	}
 }
 
+.who_iam{
+    font-weight: bold;
+}
+.school, .gen{
+    font-weight: bold;
+    text-decoration: none;
+}
+.school:visited, .gen:visited{
+    color: dimgrey;
+}
 .singleCard {
     padding-right: 2em;
     padding-left: 2em;
@@ -457,11 +468,12 @@ html, body {
 
 .footer_link{
     margin-top: 20em;
+    padding-left: 10%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
 }
 .link_image{
-    width: 40%;
+    width: 30%;
     margin-bottom: 2em;
 }
