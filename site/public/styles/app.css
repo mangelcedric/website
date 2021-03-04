@@ -351,24 +351,30 @@ html, body {
 		padding:2%;
 	}
 }
-
-.who_iam, .section {
+.formation_li {
+    list-style-type: square;
+}
+.presa {
+    font-size: 2.3em;
+}
+.section {
     font-weight: bold;
 }
 .section {
     font-size: 2.7em;
+    text-decoration: underline;
 }
-.school, .gen, .opquast, .youtube {
+.school, .gen, .opquast, .youtube, .cv {
     font-weight: bold;
     text-decoration: none;
     color: black;
 }
-.school:visited, .gen:visited, .opquast:visited, .youtube:visited {
+.school:visited, .gen:visited, .opquast:visited, .youtube:visited, .cv:visited {
     color: dimgrey;
 }
 .cv_title {
     font-weight: bold;
-    list-style-type: square;
+    list-style-type: none;
 }
 .singleCard {
     padding-right: 2em;
@@ -448,7 +454,7 @@ html, body {
 .textarea {
     width: 100%;
     height: 200px;
-    box-shadow: rgb(161, 160, 160) 1px 1px 10px;
+    box-shadow: rgb(161, 160, 160) 1px 1px 5px;
     border-radius: 0.3em;
     border: none;
     margin-top: 1em;

@@ -3,11 +3,11 @@
 {% block title %}Cedric Mangel - Contact{% endblock %}
 
 {% block body %}
-<div style="height: 800px">	
-        <!-- just to make scrolling effect possible -->
-		<h2 class="myH2">Contactez-moi</h2>
-		<p class="myP">Vous pouvez directement me contacter en m'envoyant un e-mail ou en cliquant sur un lien en bas de page</p>
-
+<div style="height: 800px">
+	<!-- just to make scrolling effect possible -->
+	<h2 class="myH2">Contactez-moi</h2>
+	<p class="myP">Envoyez-moi directement un e-mail ou cliquez sur un lien en bas de page <i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
+	<br>
 	<div class="mail myP">
 		{{ form_start(form) }}
 		{{ form_row(form.email) }}
@@ -15,17 +15,17 @@
 		{{ form_row(form.send) }}
 		{{ form_end(form) }}
 
-			{% for message in app.flashes('success') %}
-			<div class="flash-notice">
-				{{ message }}
-			</div>
+		{% for message in app.flashes('success') %}
+		<div class="flash-notice">
+			{{ message }}
+		</div>
 	</div>
-{% endfor %}
+	{% endfor %}
 </div>
-	<div class="footer_link">
-		{% for link in links|slice(0,4) %}
-		{% set img = 'uploads/'~ link.image %}
-		<a href="{{ link.linkurl }}" target="blank"><img class="link_image" src="{{ img|imagine_filter('custom_filter') }}" alt="{{ link.image }}"/></a>
-		{% endfor %}
-	</div>
+<div class="footer_link">
+	{% for link in links|slice(0,4) %}
+	{% set img = 'uploads/'~ link.image %}
+	<a href="{{ link.linkurl }}" target="blank"><img class="link_image" src="{{ img|imagine_filter('custom_filter') }}" alt="{{ link.image }}" /></a>
+	{% endfor %}
+</div>
 {% endblock %}

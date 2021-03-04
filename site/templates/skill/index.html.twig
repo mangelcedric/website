@@ -7,11 +7,12 @@
     <h2 class="myH2">Mes compétences</h2>
     <p class="myP">Issu de la Promotion Kraken de l'école O'Clock, j'ai pu appréhender les notions de programmation telles que</p>
     <div class="container card myP">
-    {% for skill in skills %}
+        {% for skill in skills %}
         <div class="singleSkillCard">
             {% set img = 'uploads/'~ skill.image %}
-            <h5> {{ skill.name }} </h5> <img class="skill_image" src="{{ img|imagine_filter('custom_filter') }}" alt="{{ skill.image }}"/>
+            <h5> {{ skill.name }} </h5> <img class="skill_image" src="{{ img|imagine_filter('custom_filter') }}"
+                alt="{{ skill.image }}" />
         </div>
-    {% endfor %}
-</div>
-{% endblock %}
+        {% endfor %}
+    </div>
+    {% endblock %}
