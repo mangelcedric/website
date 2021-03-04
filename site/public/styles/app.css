@@ -352,15 +352,23 @@ html, body {
 	}
 }
 
-.who_iam{
+.who_iam, .section {
     font-weight: bold;
 }
-.school, .gen{
+.section {
+    font-size: 2.7em;
+}
+.school, .gen, .opquast, .youtube {
     font-weight: bold;
     text-decoration: none;
+    color: black;
 }
-.school:visited, .gen:visited{
+.school:visited, .gen:visited, .opquast:visited, .youtube:visited {
     color: dimgrey;
+}
+.cv_title {
+    font-weight: bold;
+    list-style-type: square;
 }
 .singleCard {
     padding-right: 2em;
@@ -401,7 +409,7 @@ html, body {
     /* border: 1px solid rgb(117, 116, 116); */
 }
 
-.skill_image{
+.skill_image {
     text-align: center;
     display: block;
     margin-right: auto;
@@ -409,23 +417,23 @@ html, body {
     width: 70%;
 }
 
-.project_link{
+.project_link {
     font-size: 1.3em;
     text-decoration: none;
     color: black;
 }
-.project_link:hover{
+.project_link:hover {
     text-decoration: underline;
 }
 .project_link:visited{
     color:dimgrey;
 }
 
-.mail{
+.mail {
     font-size: 20px;
     font-family: "Quicksand", sans-serif;
 }
-.emailadress{
+.emailadress {
     height: 2em;
     width: 30%;
     margin-top: 1em;
@@ -437,7 +445,7 @@ html, body {
     box-shadow:  rgb(161, 160, 160) 1px 1px 10px;
     transition: 0.5s;
 }
-.textarea{
+.textarea {
     width: 100%;
     height: 200px;
     box-shadow: rgb(161, 160, 160) 1px 1px 10px;
@@ -445,11 +453,11 @@ html, body {
     border: none;
     margin-top: 1em;
 }
-.textarea:hover{
+.textarea:hover {
     box-shadow:  rgb(161, 160, 160) 1px 1px 30px;
     transition: 0.5s;
 }
-.submit{
+.submit {
     height: 3em;
     width: 20%;
     font-family: "Quicksand", sans-serif;
@@ -466,14 +474,14 @@ html, body {
     transition: 0.5s;
 }
 
-.footer_link{
+.footer_link {
     margin-top: 20em;
     padding-left: 10%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
-.link_image{
+.link_image {
     width: 30%;
     margin-bottom: 2em;
 }
