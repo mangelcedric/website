@@ -2,10 +2,11 @@
 
 ## Mon portfolio
 
-On y retrouve : 
+On y retrouve :
+
 * Une brève présentation de qui je suis et pourquoi j'ai fait une reconversion pro
 * mon parcours pro ainsi que mes formations/diplômes
-* mes projets réalisés 
+* mes projets réalisés
 * les diverses notions apprises pendant ma formation
 * la possibilité de m'envoyer un mail
 
