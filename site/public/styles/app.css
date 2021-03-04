@@ -72,7 +72,7 @@ html, body {
 /* Home section */
 .home {
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     background-image: url(../images/macos.jpg);
     background-position: center top;
 	background-size: cover;
@@ -481,7 +481,7 @@ html, body {
 }
 
 .footer_link {
-    margin-top: 20em;
+    margin-top: 15em;
     padding-left: 10%;
     display: flex;
     justify-content: center;

@@ -6,11 +6,12 @@
 
 <div style="height: 1000px">
     <h2 class="myH2">Mes réalisations</h2>
+    <br>
     <div class="card myP">
         {% for project in projects %}
         <div class="singleCard">
             {% set img = 'uploads/'~ project.image %}
-            <h5><a class="project_link" href="{{ project.projectLink }}"> {{ project.name }} </a></h5>
+            <h5><a class="project_link" href="{{ project.projectLink }}" target="blank"> {{ project.name }} </a></h5>
             <img class="project_image" src="{{ img|imagine_filter('custom_filter') }}" alt="{{ project.image }}" />
             <p>{{ project.description }}</p>
         </div>

@@ -24,10 +24,16 @@
 	</p>
 	<p class="myP">
 		Aujourd'hui j'aspire à m’épanouir dans ce domaine si passionnant et en constante évolution. <br> En effet,
-		curieux de nature, j'apprécie particulièrement à chercher l'information, me documenter pour mettre en place les
+		curieux de nature, j'apprécie particulièrement à chercher l'information, me documenter et mettre en place les
 		notions découvertes. <br> Par ailleurs, mon expérience passée fait que le travail en équipe est une seconde
 		nature chez moi tout en gardant une certaine autonomie.
 	</p>
-	<br>
+	
+</div>
+<div class="footer_link">
+	{% for link in links|slice(0,4) %}
+	{% set img = 'uploads/'~ link.image %}
+	<a href="{{ link.linkurl }}" target="blank"><img class="link_image" src="{{ img|imagine_filter('custom_filter') }}" alt="{{ link.image }}" /></a>
+	{% endfor %}
 </div>
 {% endblock %}

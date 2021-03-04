@@ -21,9 +21,11 @@ class MainController extends AbstractController
     /**
      * @Route("/", name="main")
      */
-    public function index(): Response
+    public function index(LinkRepository $linkRepository): Response
     {
-        return $this->render('main/index.html.twig');
+        return $this->render('main/index.html.twig', [
+            'links' => $linkRepository->findAll()
+        ]);
     }
 
     /**
