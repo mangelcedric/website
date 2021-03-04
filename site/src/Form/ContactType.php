@@ -19,13 +19,19 @@ class ContactType extends AbstractType
                 'label' => 'Votre adresse e-mail : ',
                 'required' => true,
                 'constraints' => new Assert\NotBlank(),
-                'attr' => ['class' => 'emailadress']
+                'attr' => [
+                    'class' => 'emailadress',
+                    'placeholder' => 'exemple@exemple.com'
+                ],
             ])
             ->add('text', TextareaType::class, [
                 'label' => false,
                 'required' => true,
                 'constraints' => new Assert\NotBlank(),
-                'attr' => ['class' => 'textarea']
+                'attr' => [
+                    'class' => 'textarea',
+                    'placeholder' => 'Votre message ...'
+                ]
             ])
             ->add('send', SubmitType::class, [
                 'label' => 'Envoyer',

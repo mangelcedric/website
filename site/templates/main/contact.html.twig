@@ -23,8 +23,7 @@
 {% endfor %}
 </div>
 	<div class="footer_link">
-        <!-- just to make scrolling effect possible -->
-		{% for link in links %}
+		{% for link in links|slice(0,4) %}
 		{% set img = 'uploads/'~ link.image %}
 		<a href="{{ link.linkurl }}" target="blank"><img class="link_image" src="{{ img|imagine_filter('custom_filter') }}" alt="{{ link.image }}"/></a>
 		{% endfor %}
