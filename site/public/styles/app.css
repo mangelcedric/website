@@ -516,3 +516,12 @@ html, body {
 .legalP {
     font-size: 1.5em;
 }
+
+.page404 {
+    text-align: center;
+}
+.page404_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
