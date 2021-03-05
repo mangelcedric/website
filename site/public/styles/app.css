@@ -369,6 +369,9 @@ html, body {
     text-decoration: none;
     color: black;
 }
+.school:hover, .gen:hover, .opquast:hover, .youtube:hover, .cv:hover {
+    color: #00E676;
+}
 .school:visited, .gen:visited, .opquast:visited, .youtube:visited, .cv:visited {
     color: dimgrey;
 }
@@ -429,7 +432,8 @@ html, body {
     color: black;
 }
 .project_link:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: #00E676;
 }
 .project_link:visited{
     color:dimgrey;
@@ -490,4 +494,25 @@ html, body {
 .link_image {
     width: 30%;
     margin-bottom: 2em;
+}
+
+.footer{
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.3em;
+}
+.legal_mentions {
+    font-family: "Quicksand", sans-serif;
+    margin-left: 6em;
+    margin-right: 6em;
+    padding-bottom: 3em;
+}
+.legal_title {
+    font-size: 2em;
+}
+.legal_subtitle {
+    font-size: 1.8em;
+}
+.legalP {
+    font-size: 1.5em;
 }

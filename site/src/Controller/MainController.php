@@ -67,4 +67,12 @@ class MainController extends AbstractController
             'links' => $linkRepository->findAll()
         ]);
     }
+
+     /**
+     * @Route("/mentionslegales", name="legalmentions")
+     */
+    public function legalMentions()
+    {
+        return $this->render('main/legal_mentions.html.twig');
+    }
 }
