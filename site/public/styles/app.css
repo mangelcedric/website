@@ -564,6 +564,7 @@ p.logo404.myP {
 }
 .chevrons {
     vertical-align: super;
+    font-weight: bold;
 }
 
 @media all and (max-width:700px) {
