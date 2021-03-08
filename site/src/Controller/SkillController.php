@@ -10,11 +10,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class SkillController extends AbstractController
 {
     /**
-     * @Route("/skills", name="skills")
+     * @Route("/competences", name="competences")
      */
     public function index(SkillRepository $skillRepository): Response
     {
-        return $this->render('skill/index.html.twig', [
+        return $this->render('competences/index.html.twig', [
             'skills' => $skillRepository->findAll(),
         ]);
     }
