@@ -520,8 +520,55 @@ html, body {
 .page404 {
     text-align: center;
 }
+.logo404 {
+    color: snow;
+    text-align: center;
+    font-size: 7em;
+    margin-bottom: 0px;
+    padding-left:15%;
+	padding-right:15%;
+}
+p.logo404.myP {
+    padding-top: 20px;
+}
 .page404_image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    background-color:rgb(42, 51, 61);
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 40%;
+}
+.codesnippet {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+.snippet_public {
+    color: rgb(131, 181, 235);
+}
+.snippet_method {
+    color:rgb(206, 155, 102)
+}
+.snippet_syntax {
+    color:rgb(208, 113, 127);
+}
+.snippet_echo {
+    color: rgb(164, 200, 151);
+}
+.number404 {
+    font-size: 2em;
+    margin-top: 0.9em;
+    color: rgb(206, 155, 102);
+    /* display: inline-flex;
+    flex-direction: row;
+    align-items:center; */
+}
+.chevrons {
+    vertical-align: super;
+}
+
+@media all and (max-width:700px) {
+    .logo404 {
+        padding: 2%;
+        font-size: 4em;
+    }
 }
