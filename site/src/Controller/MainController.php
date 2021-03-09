@@ -33,7 +33,7 @@ class MainController extends AbstractController
      */
     public function download()
     {
-        $file = new File(__DIR__ . '/../../../CV_Cedric_Mangel.pdf');
+        $file = new File(__DIR__ . '/../../CV_Cedric_Mangel.pdf');
         return $this->file($file, 'CV_Cedric_Mangel.pdf', ResponseHeaderBag::DISPOSITION_INLINE);
     }
 
