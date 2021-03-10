@@ -42,13 +42,14 @@ class MainController extends AbstractController
      */
     public function contact(Request $request, MailerInterface $mailer, LinkRepository $linkRepository): Response
     {
-        $mail = $request->get('contact');
         $form = $this->createForm(ContactType::class);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
+            $mail = $form->getData();
             $email = (new TemplatedEmail())
             ->from($mail['email'])
             ->to(new Address('cedric.mangel@gmail.com'))
+            ->subject('Nouveau message de ton site')
             ->htmlTemplate('email/email.html.twig')
             ->text($mail['text'])
             ->context([
