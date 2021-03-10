@@ -460,7 +460,7 @@ html, body {
     height: 200px;
     box-shadow: rgb(161, 160, 160) 1px 1px 5px;
     border-radius: 0.3em;
-    border: lightgray thin;
+    border: lightgray 1px thin;
     margin-top: 1em;
 }
 .textarea:hover {
