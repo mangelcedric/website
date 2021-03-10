@@ -139,6 +139,48 @@ html, body {
     }
 }
 
+@media screen and (max-width:500px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
 /* Animation */
 
 .navTrigger {
@@ -351,6 +393,14 @@ html, body {
 		padding:2%;
 	}
 }
+
+@media all and (max-width:500px){
+	.myP {
+		padding:2%;
+        font-size: 15px;
+	}
+}
+
 .formation_li {
     list-style-type: square;
 }
@@ -571,5 +621,12 @@ p.logo404.myP {
     .logo404 {
         padding: 2%;
         font-size: 4em;
+    }
+}
+
+@media all and (max-width:500px) {
+    .logo404 {
+        padding: 2%;
+        font-size: 3em;
     }
 }
