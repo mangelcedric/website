@@ -7,6 +7,11 @@
 	<!-- just to make scrolling effect possible -->
 	<h2 class="myH2">Contactez-moi</h2>
 	<br>
+		{% for message in app.flashes('success') %}
+		<div class="flash-notice myP">
+			{{ message }}
+		</div>
+	{% endfor %}
 	<p class="myP">Envoyez-moi directement un e-mail ou cliquez sur un lien en bas de page <i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
 	<br>
 	<div class="mail myP">
@@ -15,13 +20,7 @@
 		{{ form_widget(form.text) }}
 		{{ form_row(form.send) }}
 		{{ form_end(form) }}
-
-		{% for message in app.flashes('success') %}
-		<div class="flash-notice">
-			{{ message }}
-		</div>
 	</div>
-	{% endfor %}
 </div>
 <div class="footer_link">
 	{% for link in links|slice(0,4) %}
