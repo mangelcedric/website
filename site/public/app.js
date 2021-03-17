@@ -6,3 +6,11 @@ $('.navTrigger').click(function () {
 
 });
 
+// import SwupSlideTheme from '@swup/slide-theme/dist';
+// const swup = new Swup({
+//     plugins: [new SwupSlideTheme()]
+//   });
+
+
+
+const swup = new Swup();
