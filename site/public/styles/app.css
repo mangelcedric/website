@@ -654,3 +654,19 @@ p.logo404.myP {
     }
 }
 
+/* .transition-fade {
+    transition: 0.5s;
+    opacity: 1;
+    transform: translateX(0);
+    transform-origin: left;
+}
+  
+html.is-animating .transition-fade {
+    opacity: 1;
+    transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+    opacity: 1;
+    transform: translateX(0);
+} */

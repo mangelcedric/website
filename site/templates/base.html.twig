@@ -9,12 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}Portfolio Cedric Mangel - Bienvenue!{% endblock %}</title>
     {% block stylesheets %}
+    <script defer src=""></script>
+    <script defer src="{{ asset('app.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
     {% endblock %}
 </head>
 
 <body>
+    <div id="swup" class="transition-fade">
     <nav class="nav">
         <div class="container">
             <div class="logo">
@@ -64,6 +67,7 @@
         });
     </script>
     {% endblock %}
+    </div>
 </body>
 
 </html>
