@@ -39,12 +39,14 @@
 
     <section class="home">
     </section>
-
-    {% block body %}
-    {% endblock %}
+        <div id="swup" class="transition-fade">
+        {% block body %}
+        {% endblock %}
+        </div>
     <footer class="footer"><a class="legal_mentions_link" href="{{path('legalmentions')}}">Mentions légales / &#169; Cedric Mangel</a></footer>
     {% block javascripts %}
     <!-- Jquery needed -->
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="{{ asset('app.js') }}"></script>
 
