@@ -663,9 +663,5 @@ html.is-animating .transition-fade {
 html.is-animating .transition-fade {
     opacity: 1;
     transform: translateX(100%);
-}
-
-html.is-leaving .transition-fade {
-    opacity: 1;
-    transform: translateX(0);
 } */
+
