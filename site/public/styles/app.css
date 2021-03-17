@@ -643,7 +643,7 @@ p.logo404.myP {
         font-size: 15px;
     }
 }
-/* .transition-fade {
+.transition-fade {
     transition: 0.4s;
     opacity: 1;
 }
@@ -651,7 +651,7 @@ p.logo404.myP {
 html.is-animating .transition-fade {
     opacity: 0;
     transform: translateY(-50px);
-} */
+}
 
 /* .transition-fade {
     transition: 0.5s;
