@@ -97,12 +97,12 @@ html, body {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:895px) {
     .navTrigger {
         display: block;
     }
     .nav div.logo {
-        margin-left: 15px;
+        margin-left: -3em;
     }
     .nav div.main_list {
         width: 100%;
@@ -460,6 +460,10 @@ html, body {
     border-radius: 1em;
     width: 20%;
 }
+.singleSkillCard h5 {
+    margin-top: 0.5em;
+}
+
 .singleSkillCard:hover {
     box-shadow:  rgb(161, 160, 160) 1px 1px 50px;
     transition: 0.5s;
