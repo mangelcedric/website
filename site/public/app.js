@@ -6,3 +6,4 @@ $('.navTrigger').click(function () {
 
 });
 
+const swup = new Swup();
