@@ -144,7 +144,7 @@ html, body {
         display: block;
     }
     .nav div.logo {
-        margin-left: 15px;
+        margin-left: -3em;
     }
     .nav div.main_list {
         width: 100%;
