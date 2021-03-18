@@ -23,7 +23,7 @@ class ProjectCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         return [
-            IdField::new('id')->onlyOnIndex(),
+            IdField::new('id'),
             TextField::new('name', 'Nom du projet'),
             ImageField::new('image', 'Image')
             ->onlyOnIndex()
