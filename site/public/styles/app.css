@@ -438,7 +438,7 @@ html, body {
     border-radius: 1em;
 }
 .singleCard:hover {
-    box-shadow:  rgb(161, 160, 160) 1px 1px 30px;
+    box-shadow:  rgb(161, 160, 160) 1px 1px 70px;
     transition: 0.5s;
     /* background-color: #78cdfb; */
     /* border: 1px solid rgb(117, 116, 116); */
@@ -461,7 +461,7 @@ html, body {
     width: 20%;
 }
 .singleSkillCard:hover {
-    box-shadow:  rgb(161, 160, 160) 1px 1px 30px;
+    box-shadow:  rgb(161, 160, 160) 1px 1px 50px;
     transition: 0.5s;
     /* background-color: #78cdfb; */
     /* border: 1px solid rgb(117, 116, 116); */
@@ -518,7 +518,6 @@ html, body {
 }
 .submit {
     height: 3em;
-    width: 20%;
     font-family: "Quicksand", sans-serif;
     font-size: 0.7em;
     font-weight:bold;
@@ -533,6 +532,18 @@ html, body {
     transition: 0.5s;
 }
 
+.flash-notice {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    font-weight:bold;
+    border-radius: 0.2em;
+    background-color: #92dec0;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 .footer_link {
     margin-top: 15em;
     padding-left: 10%;
@@ -628,4 +639,29 @@ p.logo404.myP {
         padding: 2%;
         font-size: 3em;
     }
+    .flash-notice {
+        font-size: 15px;
+    }
 }
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+}
+  
+html.is-animating .transition-fade {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+/* .transition-fade {
+    transition: 0.5s;
+    opacity: 1;
+    transform: translateX(0);
+    transform-origin: left;
+}
+  
+html.is-animating .transition-fade {
+    opacity: 1;
+    transform: translateX(100%);
+} */
+

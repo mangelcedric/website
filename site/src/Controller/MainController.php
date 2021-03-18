@@ -58,7 +58,7 @@ class MainController extends AbstractController
                 'useremail' => $mail['email']
                 ]);
             $mailer->send($email);
-            $this->addFlash('success', 'Votre email à bien été envoyé');
+            $this->addFlash('success', 'Votre e-mail à bien été envoyé !');
 
             return $this->redirectToRoute('contact');
         }
