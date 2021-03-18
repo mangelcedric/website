@@ -438,7 +438,7 @@ html, body {
     border-radius: 1em;
 }
 .singleCard:hover {
-    box-shadow:  rgb(161, 160, 160) 1px 1px 30px;
+    box-shadow:  rgb(161, 160, 160) 1px 1px 70px;
     transition: 0.5s;
     /* background-color: #78cdfb; */
     /* border: 1px solid rgb(117, 116, 116); */
@@ -461,7 +461,7 @@ html, body {
     width: 20%;
 }
 .singleSkillCard:hover {
-    box-shadow:  rgb(161, 160, 160) 1px 1px 30px;
+    box-shadow:  rgb(161, 160, 160) 1px 1px 50px;
     transition: 0.5s;
     /* background-color: #78cdfb; */
     /* border: 1px solid rgb(117, 116, 116); */
