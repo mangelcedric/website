@@ -35,6 +35,5 @@ liip_imagine:
         fixed_filter:
             filters:
                 fixed:
-                    # set the fixed size to "120x90" pixels
                     width: 150
                     height: 150
