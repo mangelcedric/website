@@ -25,7 +25,7 @@
 <div class="footer_link">
 	{% for link in links|slice(0,4) %}
 	{% set img = 'uploads/'~ link.image %}
-	<a href="{{ link.linkurl }}" target="blank"><img class="link_image" src="{{ img|imagine_filter('fixed_filter') }}" alt="{{ link.image }}" /></a>
+	<a href="{{ link.linkurl }}" target="_blank"><img class="link_image" src="{{ img|imagine_filter('fixed_filter') }}" alt="{{ link.image }}" /></a>
 	{% endfor %}
 </div>
 {% endblock %}
