@@ -19,8 +19,8 @@
 	</p>
 	<p class="myP">
 		Je me suis donc tourné vers une formation pour devenir développeur web et web mobile avec l’ 
-		<a class="school" href="https://oclock.io" target="blank">École O’Clock</a> (certifiée 
-		<a class="gen" href="https://www.grandeecolenumerique.fr" target="blank">Grande Ecole du Numérique</a>).
+		<a class="school" href="https://oclock.io" target="_blank">École O’Clock</a> (certifiée 
+		<a class="gen" href="https://www.grandeecolenumerique.fr" target="_blank">Grande Ecole du Numérique</a>).
 	</p>
 	<p class="myP">
 		Aujourd'hui j'aspire à m’épanouir dans ce domaine si passionnant et en constante évolution. <br> En effet,
@@ -34,7 +34,7 @@
 <div class="footer_link">
 	{% for link in links|slice(0,4) %}
 	{% set img = 'uploads/'~ link.image %}
-	<a href="{{ link.linkurl }}" target="blank"><img class="link_image" src="{{ img|imagine_filter('fixed_filter') }}" alt="{{ link.image }}" /></a>
+	<a href="{{ link.linkurl }}" target="_blank"><img class="link_image" src="{{ img|imagine_filter('fixed_filter') }}" alt="{{ link.image }}" /></a>
 	{% endfor %}
 </div>
 {% endblock %}
